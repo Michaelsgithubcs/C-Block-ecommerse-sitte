@@ -43,10 +43,10 @@ For local development or hosting:
 - **Responsive**: Resize browser window or view on different devices to see responsive design
 
 ## Screenshots
+<img width="1470" height="956" alt="Screenshot 2025-12-14 at 18 49 18" src="https://github.com/user-attachments/assets/333a6461-470b-42e0-b3dc-89553d32c28c" />
 
-![Homepage Hero Section](screenshots/homepage-hero.png)
-![Clothing Page](screenshots/clothing-page.png)
-![Community Page](screenshots/community-page.png)
+<img width="1470" height="956" alt="Screenshot 2025-12-14 at 18 49 32" src="https://github.com/user-attachments/assets/3f6239be-9470-48fe-ab8c-bb29be0a2dc1" />
+<img width="1470" height="956" alt="Screenshot 2025-12-14 at 18 49 57" src="https://github.com/user-attachments/assets/31ef8ee7-9b2d-468b-b8dd-12fefe7f1102" />
 
 ## Contributing
 
