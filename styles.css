@@ -960,3 +960,198 @@ html {
 .footer-links a:hover {
   color: #fff;
 }
+/* ===================================
+  Clothing section 
+   =================================== */
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3rem;
+}
+
+@media (max-width: 1200px) {
+    .shop-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+.shop-item {
+    text-align: center;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.shop-item img {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 1.5rem;
+    display: block;
+}
+
+.shop-item h3 {
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+}
+
+.shop-item .price {
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+}
+
+.shop-colors {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 0.6rem;
+}
+
+.shop-color {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #bbb;
+}
+
+.shop-color.black { background: #000; }
+.shop-color.white { background: #fff; }
+
+.shop-rating {
+    font-size: 0.85rem;
+    color: #c6e200;
+}
+
+.shop-rating span {
+    color: #000;
+    font-size: 0.75rem;
+}
+/* ===================================
+  Clothing section 
+   =================================== */
+
+/* 🔧 CHANGE NUMBER OF COLUMNS TO INCREASE BOX WIDTH
+   Example:
+   repeat(6, 1fr)  → smaller boxes
+   repeat(4, 1fr)  → bigger boxes
+*/
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 👈 CHANGE THIS */
+    gap: 3rem;
+}
+
+@media (max-width: 1200px) {
+    .shop-grid {
+        grid-template-columns: repeat(4, 1fr); /* 👈 CHANGE THIS */
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+.shop-item {
+    text-align: center;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* 🔧 IMAGE SIZE LIMIT
+   Increase max-width for larger product images
+*/
+.shop-item img {
+    width: 100%;
+    max-width: 200px; /* 👈 CHANGE THIS (e.g. 260px) */
+    margin: 0 auto 1.5rem;
+    display: block;
+}
+
+.shop-item h3 {
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+}
+
+.shop-item .price {
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+}
+
+/* ===================================
+   SHOP IMAGE FRAME (MAIN BOX SIZE)
+   =================================== */
+
+/* 🔧 THIS CONTROLS THE BOX HEIGHT
+   Increase aspect-ratio value to make box taller
+   Example:
+   1 / 1.2 → short box
+   1 / 1.4 → taller box
+*/
+.shop-image-box {
+    aspect-ratio: 1 / 1.3; /* 👈 CHANGE THIS */
+    background: #f2f2f2;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e5e5e5;
+}
+
+.shop-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity .3s ease, transform .6s ease;
+}
+
+/* ===================================
+   COLORS & RATING
+   =================================== */
+
+.shop-colors {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 0.6rem;
+}
+
+.shop-color {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #bbb;
+}
+
+.shop-color.black { background: #000; }
+.shop-color.white {
+    background: #fff;
+    border: 1px solid #999;
+}
+
+.shop-color.active {
+    border: 2px solid #000;
+    transform: scale(1.15);
+}
+
+.shop-rating {
+    font-size: 0.85rem;
+    color: #c6e200;
+}
+
+.shop-rating span {
+    color: #000;
+    font-size: 0.75rem;
+}
